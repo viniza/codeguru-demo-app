@@ -9,8 +9,5 @@ phases:
       - mvn package
       - ls -hal
 artifacts:
-  discard-paths: yes
   files:
-    - target/*
-    - scripts/*
-    - appspec.yml
+    - '**/*'
