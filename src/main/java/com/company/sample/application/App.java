@@ -24,7 +24,7 @@ public class App {
 
     public static void main(String[] args) {
         // start the profiler
-        Profiler.builder().profilingGroupName("<insert the profiling group name here>")
+        Profiler.builder().profilingGroupName("codeguru-demo-app-test")
             .awsCredentialsProvider(DefaultCredentialsProvider.create())
             .build()
             .start();
