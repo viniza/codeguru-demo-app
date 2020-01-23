@@ -33,7 +33,7 @@ public class SalesSystem {
     public static void main(String[] args) {
         //Start the profiler
         Profiler systemProfiler =
-            Profiler.builder().profilingGroupName("<Insert the profiling group name here>")
+            Profiler.builder().profilingGroupName("codeguru-demo-app-test")
             .awsCredentialsProvider(DefaultCredentialsProvider.create())
             .build();
 
