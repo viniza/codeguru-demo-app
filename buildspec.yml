@@ -8,7 +8,6 @@ phases:
     commands:
       - mvn package
 artifacts:
-  discard-paths: yes
   files:
     - target/*
     - scripts/*
