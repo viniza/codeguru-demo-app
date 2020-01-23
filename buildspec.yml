@@ -7,14 +7,12 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - ls -hal
       - mvn test 
   post_build:
     commands:
       - echo Build completed on `date`
       - mvn package
+      - ls -hal
 artifacts:
   files:
-    - target/my-app-1.0-SNAPSHOT.jar
-    - appspec.yml
-  discard-paths: yes
+    - '**/*'
